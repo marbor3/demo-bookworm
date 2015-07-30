@@ -96,7 +96,8 @@ module.exports = function (grunt) {
             dist: {
                 options: {
                     background: false,
-                    server: '<%= config.dist %>'
+                    server: '<%= config.dist %>',
+                    port: 8080
                 }
             }
         },
@@ -228,9 +229,8 @@ module.exports = function (grunt) {
                 src: [
                     '<%= config.dist %>/scripts/**/*.js',
                     '<%= config.dist %>/styles/{,*/}*.css',
-                    '<%= config.dist %>/images/{,*/}*.*',
                     '<%= config.dist %>/styles/fonts/{,*/}*.*',
-                    '<%= config.dist %>/*.{ico,png}'
+                    '<%= config.dist %>/*.{ico,png,jpg}'
                 ]
             }
         },
@@ -250,7 +250,6 @@ module.exports = function (grunt) {
             options: {
                 assetsDirs: [
                     '<%= config.dist %>',
-                    '<%= config.dist %>/images',
                     '<%= config.dist %>/styles'
                 ]
             },
@@ -359,7 +358,7 @@ module.exports = function (grunt) {
                     cwd: '<%= config.app %>',
                     dest: '<%= config.dist %>',
                     src: [
-                        '*.{ico,png,txt}',
+                        '*.{ico,png,txt,jpg}',
                         'images/{,*/}*.webp',
                         'data/**/*.json',
                         '{,*/}*.html',
