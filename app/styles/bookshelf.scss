@@ -1,0 +1,45 @@
+.bookshelf {
+  margin: 40px 0;
+}
+
+.book-cover {
+  position: relative;
+  height: 300px;
+  margin-bottom: 20px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  transition-duration: .2s;
+  cursor: pointer;
+
+  &:hover {
+    box-shadow: 0 12px 15px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+    transform: translateY(-5px);
+
+    .book-cover-overlay {
+      visibility: visible;
+      opacity: .7;
+    }
+
+    .book-cover-button {
+      visibility: visible;
+      opacity: 1;
+    }
+  }
+
+  .book-cover-overlay {
+    visibility: hidden;
+    background: black;
+    opacity: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition-duration: .2s;
+  }
+
+  .book-cover-button {
+    visibility: hidden;
+    opacity: 0;
+    transition-duration: .2s;
+  }
+}

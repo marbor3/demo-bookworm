@@ -1,0 +1,15 @@
+{
+  "name": "demo-bookworm-bluebug-pl",
+  "private": true,
+  "dependencies": {
+    "modernizr": "~2.8.3",
+    "materialize": "~0.97.0",
+    "backbone": "~1.2.1",
+    "marionette": "~2.4.2",
+    "requirejs": "~2.1.20",
+    "materializecss-amd": "~1.0.1",
+    "require-handlebars-plugin": "~0.11.3",
+    "handlebars": "~3.0.3",
+    "backbone.localstorage": "~1.1.16"
+  }
+}

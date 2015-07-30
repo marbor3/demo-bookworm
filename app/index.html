@@ -1,0 +1,78 @@
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <title>demo bookworm bluebug pl</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <link rel="shortcut icon" href="/favicon.ico">
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+    <!-- build:css(.) styles/vendor.css -->
+    <!-- bower:css -->
+    <link rel="stylesheet" href="/bower_components/materialize/bin/materialize.css" />
+    <!-- endbower -->
+    <!-- endbuild -->
+    <!-- build:css(.tmp) styles/main.css -->
+    <link rel="stylesheet" href="styles/main.css">
+    <!-- endbuild -->
+    <!-- build:js scripts/vendor/modernizr.js -->
+    <script src="bower_components/modernizr/modernizr.js"></script>
+    <!-- endbuild -->
+    <script>
+      var Materialize = {};
+    </script>
+  </head>
+  <body class="body-login">
+    <!--[if lt IE 10]>
+      <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+    <![endif]-->
+
+        <div class="container" style="    position: absolute;   bottom: 10%;    left: 10%;">
+          <form>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="login" type="text" class="validate white-text">
+                <label for="login" class="white-text">login</label>
+              </div>
+            </div>
+            <div class="row">
+              <div class="input-field col s6">
+                <input id="password" type="password" class="validate white-text">
+                <label for="password" class="white-text">password</label>
+              </div>
+            </div>
+              <div class="row valign-wrapper">
+                  <div class="col m3 s12">
+                  <a class="btn waves-effect waves-light" href="logged.html">login</a>
+                      </div>
+                  <div class="col m3 s12">
+                  <input type="checkbox" class="white-text" id="test5" />
+                  <label for="test5" class="white-text">remember me</label>
+                      </div>
+              </div>
+
+
+          </form>
+        </div>
+
+    <!-- build:js scripts/require.js -->
+    <script src="../bower_components/requirejs/require.js"></script>
+    <script src="requirejs.config.js"></script>
+    <!-- endbuild -->
+
+    <!-- build:js scripts/libs.js -->
+    <script src="scripts/libs.js"></script>
+    <!-- endbuild -->
+
+    <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+    <script>
+      (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+      function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+      e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+      e.src='https://www.google-analytics.com/analytics.js';
+      r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+      ga('create','UA-XXXXX-X');ga('send','pageview');
+    </script>
+  </body>
+</html>
