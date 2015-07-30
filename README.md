@@ -1,4 +1,6 @@
-# 1. Resources:
+# Demo address: 
+    http://demo.bookworm.bluebug.pl:8080
+# Resources used:
   * http://www.freeimages.com/photo/notes-on-wood-5-1315374
   * http://www.freeimages.com/photo/glasses-1-1413027
   * http://www.freeimages.com/photo/my-daily-1237341
